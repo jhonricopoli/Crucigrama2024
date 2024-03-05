@@ -39,7 +39,7 @@ public class Main extends Application {
         inputContainer.setStyle("-fx-alignment: center;");
         
         // Cargar el logo
-        Image logoImage = new Image("logo.png"); // Reemplaza "logo.png" con la ruta de tu propio logo
+        Image logoImage = new Image("logo.png"); // 
         ImageView logoImageView = new ImageView(logoImage);
         
         // Agregar el logo y el contenedor de entrada al contenedor principal
