@@ -1,0 +1,61 @@
+import javafx.application.Application;
+import javafx.geometry.Insets;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+ 
+public class Main extends Application {
+ 
+    @Override
+    public void start(Stage primaryStage) {
+        // Crear un contenedor principal
+        BorderPane root = new BorderPane();
+        
+        // Crear un campo de texto para el nombre de usuario
+        TextField usernameField = new TextField();
+        usernameField.setPromptText("Nombre de usuario");
+        
+        // Crear un botÃ³n de inicio
+        Button startButton = new Button("Empezar");
+        startButton.setOnAction(e -> {
+            String username = usernameField.getText();
+            if (!username.isEmpty()) {
+                System.out.println("Â¡Hola, " + username + "!");
+                // AquÃ­ puedes agregar lÃ³gica adicional para iniciar sesiÃ³n o abrir una nueva ventana, etc.
+            } else {
+                System.out.println("Por favor, introduce un nombre de usuario vÃ¡lido.");
+            }
+        });
+        
+        // Crear un contenedor para el campo de texto y el botÃ³n
+        VBox inputContainer = new VBox(10);
+        inputContainer.setPadding(new Insets(20));
+        inputContainer.getChildren().addAll(usernameField, startButton);
+        inputContainer.setStyle("-fx-alignment: center;");
+        
+        // Cargar el logo
+        Image logoImage = new Image("logo.png"); // Reemplaza "logo.png" con la ruta de tu propio logo
+        ImageView logoImageView = new ImageView(logoImage);
+        
+        // Agregar el logo y el contenedor de entrada al contenedor principal
+        root.setTop(logoImageView);
+        root.setCenter(inputContainer);
+        
+        // Configurar la escena
+        Scene scene = new Scene(root, 300, 200);
+        
+        // Configurar el escenario principal
+        primaryStage.setTitle("Inicio de sesiÃ³n");
+        primaryStage.setScene(scene);
+primaryStage.show();
+    }
+ 
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
