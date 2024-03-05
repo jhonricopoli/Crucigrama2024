@@ -1,0 +1,195 @@
+-- Crear la base de datos
+CREATE DATABASE MiBaseDeDatos;
+ 
+-- Usar la base de datos creada
+USE MiBaseDeDatos;
+ 
+-- Crear la tabla para animales
+CREATE TABLE Animales (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Nombre VARCHAR(50)
+);
+ 
+-- Insertar datos en la tabla de Animales
+INSERT INTO Animales (Nombre) VALUES
+('Perro'),
+('Gato'),
+('Elefante'),
+('LeÃ³n'),
+('Oso'),
+('Serpiente'),
+('Tigre'),
+('Caballo'),
+('PÃ¡jaro'),
+('Pez');
+ 
+-- Crear la tabla para colores
+CREATE TABLE Colores (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Nombre VARCHAR(50)
+);
+ 
+-- Insertar datos en la tabla de Colores
+INSERT INTO Colores (Nombre) VALUES
+('Rojo'),
+('Azul'),
+('Verde'),
+('Amarillo'),
+('Negro'),
+('Blanco'),
+('Morado'),
+('Naranja'),
+('Rosa'),
+('Gris');
+ 
+-- Crear la tabla para frutas
+CREATE TABLE Frutas (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Nombre VARCHAR(50)
+);
+ 
+-- Insertar datos en la tabla de Frutas
+INSERT INTO Frutas (Nombre) VALUES
+('Manzana'),
+('PlÃ¡tano'),
+('Naranja'),
+('Fresa'),
+('PiÃ±a'),
+('Uva'),
+('SandÃ­a'),
+('MelÃ³n'),
+('Mango'),
+('Kiwi');
+ 
+-- Crear la tabla para paÃ­ses
+CREATE TABLE Paises (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Nombre VARCHAR(50)
+);
+ 
+-- Insertar datos en la tabla de Paises
+INSERT INTO Paises (Nombre) VALUES
+('Estados Unidos'),
+('EspaÃ±a'),
+('Francia'),
+('China'),
+('Brasil'),
+('Alemania'),
+('India'),
+('JapÃ³n'),
+('Italia'),
+('MÃ©xico');
+ 
+-- Crear la tabla para profesiones
+CREATE TABLE Profesiones (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Nombre VARCHAR(50)
+);
+ 
+-- Insertar datos en la tabla de Profesiones
+INSERT INTO Profesiones (Nombre) VALUES
+('MÃ©dico'),
+('Ingeniero'),
+('Profesor'),
+('Abogado'),
+('Carpintero'),
+('Actor'),
+('Cantante'),
+('Programador'),
+('Agricultor'),
+('Bombero');
+ 
+-- Crear la tabla para instrumentos musicales
+CREATE TABLE InstrumentosMusicales (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Nombre VARCHAR(50)
+);
+ 
+-- Insertar datos en la tabla de InstrumentosMusicales
+INSERT INTO InstrumentosMusicales (Nombre) VALUES
+('Guitarra'),
+('Piano'),
+('BaterÃ­a'),
+('ViolÃ­n'),
+('Flauta'),
+('Trompeta'),
+('SaxofÃ³n'),
+('TrombÃ³n'),
+('Cello'),
+('Clarinete');
+ 
+-- Crear la tabla para deportes
+CREATE TABLE Deportes (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Nombre VARCHAR(50)
+);
+ 
+-- Insertar datos en la tabla de Deportes
+INSERT INTO Deportes (Nombre) VALUES
+('FÃºtbol'),
+('Baloncesto'),
+('Tenis'),
+('NataciÃ³n'),
+('Atletismo'),
+('Rugby'),
+('Voleibol'),
+('Golf'),
+('BÃ©isbol'),
+('Hockey');
+ 
+-- Crear la tabla para vegetales
+CREATE TABLE Vegetales (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Nombre VARCHAR(50)
+);
+ 
+-- Insertar datos en la tabla de Vegetales
+INSERT INTO Vegetales (Nombre) VALUES
+('Zanahoria'),
+('BrÃ³coli'),
+('Lechuga'),
+('Tomate'),
+('Pepino'),
+('Calabaza'),
+('Espinaca'),
+('Cebolla'),
+('Pimiento'),
+('Patata');
+ 
+-- Crear la tabla para muebles
+CREATE TABLE Muebles (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Nombre VARCHAR(50)
+);
+ 
+-- Insertar datos en la tabla de Muebles
+INSERT INTO Muebles (Nombre) VALUES
+('Mesa'),
+('Silla'),
+('SofÃ¡'),
+('Cama'),
+('Armario'),
+('EstanterÃ­a'),
+('Escritorio'),
+('CÃ³moda'),
+('Mesita de noche'),
+('Banco');
+ 
+-- Crear la tabla para elementos de la naturaleza
+CREATE TABLE ElementosNaturaleza (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Nombre VARCHAR(50)
+);
+ 
+-- Insertar datos en la tabla de ElementosNaturaleza
+INSERT INTO ElementosNaturaleza (Nombre) VALUES
+('Ãrbol'),
+('RÃ­o'),
+('MontaÃ±a'),
+('Mar'),
+('Sol'),
+('Luna'),
+('Estrella'),
+('Flor'),
+('Cascada'),
+('Cielo');
